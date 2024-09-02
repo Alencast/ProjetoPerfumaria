@@ -108,3 +108,43 @@ footer img {
     height: 30px; 
     margin-left: 15px;
 }
+
+main{
+    
+    
+}
+
+
+.container{
+    /* background-color:red; */
+    
+}
+
+figure{   
+    display: flex;
+    justify-content: center;    
+   
+}
+.imgMain{
+    width:  80%;
+}
+
+.cardPerfume{
+    /* background-color: cornflowerblue; */
+    width: 230px;
+    height: 280px;
+}
+
+.perfumes{
+    width: 8em;
+}
+
+.infoCard{
+    text-align: center;
+    box-sizing: border-box;
+    margin: 5px;
+}
+
+.nomePerfume{
+    font-size: smaller;
+}

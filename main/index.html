@@ -12,12 +12,11 @@
     <header>
         <img src="img/beauty.png" alt="logo">
         <nav>            
-            <ul>
-                <p id="femininos">teste</p>
-                <li><h2><a href="#">Principal</a></h2></li>
-                <li><h2><a href="#">Femininos</a></h2></li>
-                <li><h2><a href="#">Masculinos</a></h2></li>
-                <li><h2><a href="#">Quem Somos</a></h2></li>
+            <ul>                
+                <li><h2><a href="#principal">Principal</a></h2></li>
+                <li><h2><a href="#femininos">Femininos</a></h2></li>
+                <li><h2><a href="#masculinos">Masculinos</a></h2></li>
+                <li><h2><a href="#quemsomos">Quem Somos</a></h2></li>
             </ul>
             <div class="search-container">
                 <input type="text" placeholder="Pesquisar">
@@ -31,7 +30,7 @@
         </nav>
     </header>
 
-    <h1></h1>
+    <h1 id="principal"></h1>
 
     <main>
         <figure>
@@ -68,7 +67,7 @@
             </div>
         </section>
         <hr/>
-        <section class="femininos">
+        <section id="femininos" class="femininos">
             <h2 class="tituloContainer">Decants Femininos: </h2>
             <div class="container">
                 <div class="cardPerfume">
@@ -82,7 +81,7 @@
             </div>
         </section>
         <hr/>
-        <section class="masculinos">
+        <section id="masculinos" class="masculinos">
             <h2 class="tituloContainer">Decants Masculinos: </h2>
             <div class="container">
                 <div class="cardPerfume">
@@ -95,8 +94,12 @@
                 </div>
             </div>
         </section>
-
-        
+        <hr/>
+        <section id="quemsomos" class="quemsomos">
+            <h2 class="tituloContainer">Quem Somos</h2>
+            <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently 
+                with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </section>
     </main>
 
     <footer>

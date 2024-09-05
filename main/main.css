@@ -16,12 +16,10 @@ header {
     padding: 10px 30px; 
     background-color: #f8f9fa;
     position: fixed;
-    width: 100%;       
-    top: 0; /* Adiciona a posição fixa no topo da página */
-    left: 0; /* Garante que o header se estenda por toda a largura da página */
-    z-index: 1000; /* Garante que o header fique acima do restante do conteúdo */
+    width: 100%;
+    /* background-color: black; */
+    
 }
-
 
 header img {
     height: 70px; 
@@ -63,7 +61,6 @@ nav h2:hover {
 }
 
 
-
 /* Estilo dos ícones SVG dentro do nav */
 nav svg {
     fill: #888; 
@@ -100,45 +97,6 @@ nav svg:hover {
     height: 24px;
 }
 
-.container {
-    display:flex;    
-    width: 70%;
-    margin: auto;
-}
-
-.infoCompra{
-    margin-top: 20%;
-    
-    line-height: 2;   
-}
-
-main {
-    padding-top: 90px; 
-}
-
-/* Estiliza a classe cartoes */
-.cartoes {
-    display: flex; 
-    gap: 10px; 
-}
-
-.cartoes img {
-    width: 30px; 
-    height: auto; 
-    transition: transform 0.3s ease; 
-}
-
-.cartoes img:hover {
-    transform: scale(1.2); 
-}
-
-.botaoComprar{
-    width: 400px;
-    height:40px;
-    color:white;
-    background-color: black;
-}
-
 footer {
     display: flex;
     justify-content: space-between;
@@ -165,10 +123,61 @@ footer img {
    
 }
 
+.infoFooter{
+      
+}
 
+figure{   
+    display: flex;
+    justify-content: center;    
+   
+}
+.imgMain{
+    width:  80%;
+    margin-top: 8em;
+}
 
+.cardPerfume{
+    /* background-color: cornflowerblue; */
+    width: 230px;
+    height: 280px;
+    margin-top: 2em;
+    margin-left: 1em;
+}
+.cardPerfume:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
+.perfumes{
+    width: 8em;
+}
 
+.infoCard{
+    text-align: center;
+    box-sizing: border-box;
+    margin: 5px;
+}
 
+.nomePerfume{
+    font-size: smaller;
+}
 
+.container{
+    margin-left: 10em;
+    margin-right: 10em;
+    display: flex;
+    justify-content: space-between;
+}
+.tituloContainer{
+    margin-bottom: 1em;
+    margin-left: 7em;
+}
 
+hr{
+    background-color: gray;
+    margin: auto;
+    width: 80%;  
+    margin-top: 4em;
+    margin-bottom: 4em;
+
+}

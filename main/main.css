@@ -99,25 +99,33 @@ nav svg:hover {
 
 footer {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
-    background-color: #f8f9fa;
+    padding: 10px 0;    
+    background-color: #3A3A3A;
+    color: white;
+    height: 250px;
+    
+}
+footer a{
+    text-decoration: none;
+    color:white
 }
 
 footer p {
     margin-right: 10px;
+    margin-bottom: 20px;
 }
 
 footer img {
     height: 30px; 
-    margin-left: 15px;
+    margin-left: 50px;
+   
 }
 
-main{
-
+.infoFooter{
+      
 }
-
 
 figure{   
     display: flex;

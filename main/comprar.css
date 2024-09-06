@@ -101,9 +101,12 @@ nav svg:hover {
 }
 
 .container {
-    display:flex;    
+    display: flex;    
     width: 70%;
     margin: auto;
+    border: 0 solid #cdcecf;
+    border-width: 0 1px 0;
+    padding: 20px; 
 }
 
 .infoCompra{
@@ -137,6 +140,28 @@ main {
     height:40px;
     color:white;
     background-color: black;
+    margin: 30px 0 30px 0;
+    border-radius: 10px;
+}
+
+.calcCEP{
+    height:24px;
+    color:white;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.inputCEP{
+    height:25px;
+    width: 100px;
+}
+
+.infoProduto {        
+    width: 70%;
+    margin: auto;
+    border: 0 solid #cdcecf;
+    border-width: 0 1px 1px;
+    padding: 20px; 
 }
 
 footer {

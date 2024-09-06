@@ -135,21 +135,47 @@ main {
     transform: scale(1.2); 
 }
 
-.botaoComprar{
+/* Section dos botões: */
+
+.botaoComprar {
     width: 400px;
-    height:40px;
-    color:white;
+    height: 40px;
+    color: white;
     background-color: black;
-    margin: 30px 0 30px 0;
+    margin: 30px 0;
     border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
 }
 
-.calcCEP{
-    height:24px;
-    color:white;
+.botaoComprar:hover {
+    background-color: #333; 
+}
+
+.botaoComprar:active {
+    background-color: #111; 
+    transform: scale(0.98); 
+}
+
+.calcCEP {
+    height: 24px;
+    color: white;
     background-color: black;
     border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
 }
+
+.calcCEP:hover {
+    background-color: #333; 
+}
+
+.calcCEP:active {
+    background-color: #111; 
+    transform: scale(0.98); 
+    }
 
 .inputCEP{
     height:25px;

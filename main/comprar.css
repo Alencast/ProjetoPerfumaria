@@ -101,7 +101,8 @@ nav svg:hover {
 }
 
 .container {
-    display: flex;    
+    display: flex;   
+    justify-content: center; 
     width: 70%;
     margin: auto;
     border: 0 solid #cdcecf;
@@ -110,9 +111,8 @@ nav svg:hover {
 }
 
 .infoCompra{
-    margin-top: 20%;
-    
-    line-height: 2;   
+    margin-top: 20%;    
+    line-height: 2;  
 }
 
 main {

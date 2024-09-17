@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+#logo{
+    margin-right: 8em;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px; 
+    background-color: #f8f9fa;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+header img {
+    height: 70px; 
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin-right: 30px; /* Controlar a distância entre os itens do header */
+}
+
+nav ul li {
+    margin: 0 20px; /* Controlar a distância entre os itens do header */
+}
+
+nav h2 {
+    font-size: 20px; /* Fica à vontade ai pra mexer nas fontes */
+    transition: transform 0.3s ease; /* Zoom do hover */
+}
+
+nav a {
+    text-decoration: none;
+    color: #888; 
+    transition: color 0.3s ease; /* Transition de cores de cinza pra preto que te falei */
+}
+
+nav a:hover {
+    color: #000; 
+}
+
+nav h2:hover {
+    transform: scale(1.1); /* Aumentar um pouco o tamanho da fonte ao passar o mouse */
+}
+
+/* Estilo dos ícones SVG dentro do nav */
+nav svg {
+    fill: #888; 
+    transition: fill 0.3s ease; 
+    width: 24px; 
+    height: 24px; 
+}
+
+nav svg:hover {
+    fill: #000; 
+}
+
+nav svg:hover {
+    fill: #000; 
+}
+
+.search-container {
+    position: relative;
+    margin-right: 30px; 
+}
+
+.search-container input[type="text"] {
+    padding: 10px 15px 10px 40px; 
+    border: 1px solid #ccc;
+    border-radius: 30px; 
+    font-size: 18px; 
+    width: 400px;
+}
+
+.search-container svg {
+    position: absolute;
+    top: 50%;
+    left: 10px; /* Ajustra o espaço para o ícone da lupa */
+    transform: translateY(-50%);
+    cursor: pointer;
+    fill: #888;
+    width: 24px; 
+    height: 24px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;    
+    background-color: #3A3A3A;
+    color: white;
+    height: 250px;   
+}
+
+#divFooter{
+    display:flex; justify-content: space-between; margin:auto; gap:100px;
+}
+
+footer a{
+    text-decoration: none;
+    color:white
+}
+
+footer p {
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+footer img {
+    height: 30px; 
+    margin-left: 50px;
+   
+}
+
+@media (max-width: 800px){
+    footer{
+        height: 400px;   
+    }
+    #divFooter{
+        padding-left: 5em;
+        display: block; 
+        justify-content: space-between;
+        margin: 0;
+    }
+}

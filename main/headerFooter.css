@@ -60,9 +60,9 @@ nav a {
 /* Estilo para os itens de navegação no header */
 nav ul li a {
     text-decoration: none;
-    color: #888; 
-    font-size: 16px; 
-    font-weight: 500; 
+    color: #888; /* Cor cinza para os itens */
+    font-size: 16px; /* Tamanho da fonte dos itens */
+    font-weight: 500; /* Peso da fonte para dar mais destaque */
     transition: color 0.3s ease, transform 0.3s ease; 
 }
 
@@ -77,8 +77,9 @@ nav a:hover {
 
 nav h2:hover {
     transform: scale(1.1); 
+}
 
-
+/* Estilo dos ícones SVG dentro do nav */
 nav svg {
     fill: #888; 
     transition: fill 0.3s ease; 
@@ -125,16 +126,16 @@ footer {
     padding: 20px 0;    
     background-color: #3A3A3A;
     color: white;
-    flex-wrap: wrap; 
+    flex-wrap: wrap; /* Permite que o conteúdo quebre para a linha seguinte em telas menores */
 }
 
 #divFooter {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%; 
-    max-width: 1200px; 
-    gap: 50px; 
+    width: 80%; /* Ajusta a largura para centralizar melhor */
+    max-width: 1200px; /* Limita a largura máxima */
+    gap: 50px; /* Ajusta o espaçamento entre as colunas */
 }
 
 footer a {
@@ -168,5 +169,3 @@ footer img {
         margin-left: 0;
     }
 }
-}
-    

@@ -1,3 +1,8 @@
+*{
+    margin:0;
+    padding:0;
+}
+
 
 .container {
     display: flex;   
@@ -7,6 +12,14 @@
     border: 0 solid #cdcecf;
     border-width: 0 1px 0;
     padding: 20px; 
+
+}
+
+.infoProduto {        
+    width: 60%;
+    margin: auto;    
+    padding: 20px; 
+   
 }
 
 .infoCompra{
@@ -81,18 +94,63 @@ main {
     width: 100px;
 }
 
-.infoProduto {        
-    width: 70%;
-    margin: auto;
-    border: 0 solid #cdcecf;
-    border-width: 0 1px 1px;
-    padding: 20px; 
-}
-
-
 div#agradecimentos{
     margin-top: 15em;
     margin-bottom: 15em;
     text-align: center;
 }
 
+/* Media Queries para dispositivos móveis */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .infoCompra {
+        margin-top: 10%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .infoProduto {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .botaoComprar {
+        width: 100%;
+        height: 50px;
+    }
+
+    .cartoes {
+        justify-content: center;
+    }
+
+    .calcCEP {
+        width: 100%;
+        height: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .botaoComprar {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .calcCEP {
+        font-size: 1rem;
+        height: 30px;
+    }
+
+    .inputCEP {
+        width: 80%;
+    }
+
+    .infoProduto img {
+        width: 100%;
+        margin: 0;
+    }
+}

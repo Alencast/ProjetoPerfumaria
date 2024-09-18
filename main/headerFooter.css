@@ -3,28 +3,31 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-}
-
-body {
     font-family: Arial, sans-serif;
 }
+
+
 
 #logo{
     margin-right: 8em;
 }
 header {
+    
     display: flex;
-    justify-content: space-between;
+    justify-content:space-around;
     align-items: center;
-    padding: 10px 30px; 
+    padding: 10px 30px;
     background-color: #f8f9fa;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
+    font-size: 24px; 
 }
+
+
 header img {
-    height: 70px; 
+    height: 70px;
     padding: 10px;
 }
 
@@ -36,11 +39,11 @@ nav {
 nav ul {
     display: flex;
     list-style: none;
-    margin-right: 30px; /* Controlar a distância entre os itens do header */
+    margin-right: 30px; 
 }
 
 nav ul li {
-    margin: 0 20px; /* Controlar a distância entre os itens do header */
+    margin: 0 20px; 
 }
 
 nav h2 {
@@ -50,8 +53,22 @@ nav h2 {
 
 nav a {
     text-decoration: none;
+    color: #9b9797; 
+    transition: color 0.3s ease; 
+}
+
+/* Estilo para os itens de navegação no header */
+nav ul li a {
+    text-decoration: none;
     color: #888; 
-    transition: color 0.3s ease; /* Transition de cores de cinza pra preto que te falei */
+    font-size: 16px; 
+    font-weight: 500; 
+    transition: color 0.3s ease, transform 0.3s ease; 
+}
+
+nav ul li a:hover {
+    color: #0f0e0e;
+    transform: scale(1.1); 
 }
 
 nav a:hover {
@@ -59,10 +76,9 @@ nav a:hover {
 }
 
 nav h2:hover {
-    transform: scale(1.1); /* Aumentar um pouco o tamanho da fonte ao passar o mouse */
-}
+    transform: scale(1.1); 
 
-/* Estilo dos ícones SVG dentro do nav */
+
 nav svg {
     fill: #888; 
     transition: fill 0.3s ease; 
@@ -104,42 +120,53 @@ nav svg:hover {
 
 footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Centraliza os itens horizontalmente */
     align-items: center;
-    padding: 10px 0;    
+    padding: 20px 0;    
     background-color: #3A3A3A;
     color: white;
-    height: 250px;   
+    flex-wrap: wrap; 
 }
 
-#divFooter{
-    display:flex; justify-content: space-between; margin:auto; gap:100px;
+#divFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%; 
+    max-width: 1200px; 
+    gap: 50px; 
 }
 
-footer a{
+footer a {
     text-decoration: none;
-    color:white
+    color: white;
 }
 
 footer p {
-    margin-right: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 footer img {
-    height: 30px; 
-    margin-left: 50px;
-   
+    height: 30px;
+    margin-left: 10px;
 }
 
-@media (max-width: 800px){
-    footer{
-        height: 400px;   
+@media (max-width: 800px) {
+    footer {
+        flex-direction: column; 
+        height: auto; 
     }
-    #divFooter{
-        padding-left: 5em;
-        display: block; 
-        justify-content: space-between;
-        margin: 0;
+
+    #divFooter {
+        flex-direction: column; 
+        align-items: center;
+        width: 100%;
+        gap: 20px; 
+    }
+
+    footer img {
+        margin-left: 0;
     }
 }
+}
+    
